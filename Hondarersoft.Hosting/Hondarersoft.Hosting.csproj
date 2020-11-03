@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Tetsuo Honda</Authors>
+    <Company>Tetsuo Honda</Company>
+    <Copyright>2020 Tetsuo Honda</Copyright>
+    <PackageLicenseFile></PackageLicenseFile>
+    <RepositoryUrl>https://github.com/Hondarer/Hondarersoft.Hosting</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Hondarer/Hondarersoft.Hosting</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hondarersoft.Utility" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.9" />
+  </ItemGroup>
+
+</Project>
