@@ -24,7 +24,7 @@ namespace Hondarersoft.Hosting
             foreach (ServiceConfigEntry entry in serviceConfig)
             {
                 // TODO: いいかげん(ちゃんと例外処理をすること)
-                Assembly asm = Assembly.Load(entry.AssemblyName);
+                Assembly asm = Assembly.LoadFrom(entry.AssemblyName);
                 Type interfaceType = asm.GetType(entry.InterfaceFullName);
                 Type classType = asm.GetType(entry.ClassFullName);
 

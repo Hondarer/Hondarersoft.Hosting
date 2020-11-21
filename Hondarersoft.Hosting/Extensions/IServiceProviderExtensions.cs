@@ -39,7 +39,7 @@ namespace Hondarersoft.Hosting
             // 各インターフェースは DI コンテナから払い出したいので、ここで払い出し処理を行う。
             // TODO: 各種例外への対応ができていない。
 
-            Assembly asm = Assembly.Load(assemblyName);
+            Assembly asm = Assembly.LoadFrom(assemblyName);
             Type commonApiControllerType = asm.GetType(classFullName);
 
             List<Type> types = new List<Type>();
