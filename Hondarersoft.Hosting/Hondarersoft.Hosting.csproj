@@ -11,9 +11,9 @@
     <RepositoryUrl>https://github.com/Hondarer/Hondarersoft.Hosting</RepositoryUrl>
     <PackageProjectUrl>https://github.com/Hondarer/Hondarersoft.Hosting</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

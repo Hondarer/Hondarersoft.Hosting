@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
+using System.IO;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -42,6 +44,9 @@ namespace Hondarersoft.Hosting
             // 基本的には各処理で正しく try - catch を行い、Task.NoWait() を用いて
             // 処理を行うこと。
             TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;
+
+            // カレントディレクトリを実行アセンブリの場所に合わせる。
+            Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location));
         }
 
         private void NoWaitTaskException(object sender, Utility.NoWaitTaskExceptionEventArgs e)
